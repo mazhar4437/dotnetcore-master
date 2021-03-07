@@ -7,6 +7,8 @@ namespace dotnetcore
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
+            StringCalculator sc = new StringCalculator();
+            sc.Add("4667,23423,3222");
         }
     }
 }
