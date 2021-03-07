@@ -23,7 +23,7 @@ namespace dotnetcore
         {
             var calc = new StringCalculator();
 
-            var result = calc.Add("323");
+            var result = calc.Add("a323");
 
             result.Should().Be(323);
         }
