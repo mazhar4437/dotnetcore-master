@@ -22,33 +22,11 @@ namespace dotnetcore
         {
             var calc = new StringCalculator();
 
-            var result = calc.Add("323a");
+            var result = calc.Add("323a,1");
 
-            result.Should().Be(323);
+            result.Should().Be(324);
         }
 
-        // [Theory]
-        // [InlineData("323232,432432", 755664)]
-        // [InlineData("323232,432432,3423423", 4179087)]
-        // public void Add_WhenCalledWithArbitaryCommaSeperatedStringValues_ReturnsSumofNumbers(string numbers,int expectedResult)
-        // {
-        //     var calc = new StringCalculator();
-
-        //     var result = calc.Add(numbers);
-
-        //     result.Should().Equals(expectedResult);
-        // }
-
-        // [Fact]
-        // public void Add_WhenCalledContainsNewlinebetweenNumbers_ReturnsSumofNumbers()
-        // {
-        //     var calc = new StringCalculator();
-
-        //     var result = calc.Add("323232\n432432,3423423");
-
-        //     result.Should().Equals(4179087);
-        // }
-
-
+       
     }
 }
